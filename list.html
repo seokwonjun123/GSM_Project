@@ -1,13 +1,38 @@
 <!doctype html>
 <meta charset="utf-8">
 <head>
+    <style>
+  
+        h1{
+           border-bottom:5px solid red;
+           text-align:center;
+           font-family: 'Bangers', cursive;
+        }
+        ol{
+            border-right:5px solid blue;
+        }
+        #contain{
+            display:grid;
+           grid-template-columns:200px 1fr;  
+           background-color:pink;
+        }
+    </style>
 </head>
-<body>
+<body id="bodyTag">
     <h1><a href="index.html">WEB!</a></h1>
-    <ol>
-        <li><a href="html">html</a></li>
-        <li><a href="css">css</a></li>
-        <li><a href="javasript">javasript</a></li><br>
-    </ol>
-    
+    <div id="contain">
+        <ol>
+            <li><a href="html">html</a></li>
+            <li><a href="css">css</a></li>
+            <li><a href="javasript">javasript</a></li><br>
+        </ol>
+        <div>WEB is world wide web.</div>
+        <div>
+            <input type="button" value="검정" onclick="document.querySelector('#bodyTag').style.backgroundColor='black';
+document.querySelector('#bodyTag').style.color='white';"> 
+            <input type="button" value="화이트" onclick="document.querySelector('#bodyTag').style.backgroundColor='white';
+document.querySelector('#bodyTag').style.color='black';">
+        </div>
+
+    </div>
 </body>
